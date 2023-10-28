@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "react-app",
+    "eslint-config-prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    // "eol-last": [
+    //   "error",
+    //   "never"
+    // ],
+    "max-len": [
+      "error",
+      {
+        "code": 200
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxBOF": 0,
+        "maxEOF": 1
+      }
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      4
+    ],
+    "@typescript-eslint/member-delimiter-style": "error",
+    "@typescript-eslint/typedef": [
+      "error",
+      {
+        "arrowParameter": true,
+        "memberVariableDeclaration": true,
+        "parameter": true,
+        "propertyDeclaration": true,
+        "variableDeclaration": true,
+        "variableDeclarationIgnoreFunction": true
+      }
+    ]
+    //add customize rules here as per your project's needs
+  }
+}
