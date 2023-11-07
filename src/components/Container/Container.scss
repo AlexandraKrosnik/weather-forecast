@@ -1,0 +1,20 @@
+@use "../../style/widthVariables.scss";
+.main-container{   
+    margin: 0 auto;
+ 
+
+    @media (min-width: widthVariables.$mobile-width) {
+      width: var(--mobile-width);
+      padding: 0 20px 5px 20px;
+    };
+  
+    @media (min-width: widthVariables.$table-width){
+      width:  var(--table-width);
+      padding: 0 32px 10px 32px;
+    };
+  
+    @media  (min-width: widthVariables.$desktop-width){
+      width: var(--desktop-width);
+      padding: 0 16px 10px 16px;
+    }
+}

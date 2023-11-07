@@ -1,0 +1,25 @@
+@use "../../style/widthVariables.scss";
+.search{   
+    width: 100%;   
+    & .ant-input-wrapper.ant-input-group .ant-input-affix-wrapper
+    {
+        padding: 10px 5px;
+        border-start-start-radius: 12px;
+        border-end-start-radius: 12px;
+    }
+    & .ant-input-group-addon .ant-btn.ant-input-search-button.ant-btn-icon-only{
+        padding: 10px 5px;
+        height: 100%;
+        width: 50px;
+        border-start-end-radius: 12px;
+        border-end-end-radius: 12px;
+    }
+    & .ant-btn-icon svg{
+        fill: var(--accent-color)
+    }
+
+
+    @media (min-width: widthVariables.$table-width){
+        width: 80%; 
+    }
+}

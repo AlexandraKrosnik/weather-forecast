@@ -1,0 +1,67 @@
+@use "../../style/cssVariables.scss";
+@import-normalize;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Roboto',
+    'Abril Fatface',  'Open Sans', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.default{
+ 
+  --bg-body-img: url("../../images/default/bg.svg")
+}
+.dark{
+
+  --bg-body-img: url("../../images/dark/bg.svg")
+}
+
+
+#root{
+    font-family: Poppins, sans-serif;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: var(--bg-body-img) center 120% / auto no-repeat, linear-gradient(var(--bg-body-1) 0%, var(--bg-body-2) 100%);
+    
+}

@@ -1,11 +1,12 @@
 import axios, { AxiosResponse, type AxiosError } from 'axios'
 import { LocationParams, type ApiRequestParams, CityParams } from '../models/ApiModels'
 
+
 type AxiosParams = {
     baseUrl: string;
 }
 
-export const axiosBaseWeatherQuery = (axiosParams: AxiosParams): any => {
+export const axiosBaseWeatherQuery = (axiosParams: AxiosParams) => {
     const { baseUrl } = axiosParams
     return async (apiRequestParams: ApiRequestParams) => {
         const { url, method, params } = apiRequestParams

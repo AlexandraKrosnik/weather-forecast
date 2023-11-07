@@ -59,7 +59,7 @@
     "@typescript-eslint/typedef": [
       "error",
       {
-        "arrowParameter": true,
+        "arrowParameter": false,
         "memberVariableDeclaration": true,
         "parameter": true,
         "propertyDeclaration": true,

@@ -1,0 +1,18 @@
+@use "darkVariables";
+@use "defaultVariables";
+@use "widthVariables";
+*{
+    --mobile-width: #{widthVariables.$mobile-width};
+    --table-width:#{widthVariables.$table-width};
+    --desktop-width: #{widthVariables.$desktop-width};
+}
+
+.default{    
+    --bg-body-1: #{defaultVariables.$bg-body-1};
+    --bg-body-2: #{defaultVariables.$bg-body-2};
+    --accent-color:#{defaultVariables.$accent-color};   
+};
+.dark{
+    --bg-body-1: #{darkVariables.$bg-body-1};
+    --bg-body-2: #{darkVariables.$bg-body-2};    
+};
